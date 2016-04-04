@@ -1,5 +1,2 @@
 <h3>listingTile</h3>
-<h2>{{listing.title}}</h2>
-<h4>{{listing.price}}</h4>
-<img src="{{listing.photo}}">
-<p>{{listing.description}}</p>
+<h2>{{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}</h2>
