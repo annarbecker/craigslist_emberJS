@@ -7,4 +7,4 @@ export default Ember.Route.extend({
       listings: this.store.findAll('listing')
     });
   }
-}
+});
