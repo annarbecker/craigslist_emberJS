@@ -1,4 +1,2 @@
 {{new-listing listingSave2="listingSave3" category=model}}
-{{#each model.listings as |listing|}}
-  <h2>{{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}</h2>
-{{/each}}
+{{category-list category=model}}
