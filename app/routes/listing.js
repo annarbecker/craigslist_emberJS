@@ -2,7 +2,20 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    console.log(params.listing_id);
     return this.store.findRecord('listing', params.listing_id);
   },
+  actions : {
+    destroyListing(listing) {
+      listing.destroyRecord();
+      this.transitionTo('index');
+    },
+    update(listing, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          listing.set(key,params[key]);
+        }
+      });
+      listing.save();
+    }
+  }
 });

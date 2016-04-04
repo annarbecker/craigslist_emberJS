@@ -1,3 +1,2 @@
-<h2>{{model.title}} - ${{model.price}}</h2>
-<img src="{{model.photo}}">
-<p>{{model.description}}</p>
+{{listing-detail listing=model destroyListing="destroyListing"}}
+{{update-listing update="update" listing=model}}
