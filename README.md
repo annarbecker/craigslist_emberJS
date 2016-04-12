@@ -1,6 +1,6 @@
 # Craigslist Clone
 
-#### Craigslist replica in Ember JS | April 5, 2016
+#### Craigslist replica in Ember JS | April 4, 2016
 
 #### By Anna Becker & Michael Schennum
 
